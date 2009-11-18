@@ -8,3 +8,11 @@ The push button module is a module where push buttons can be connected to.  For 
 
 Progress:
   * Start off with regular debounce example
+
+TODO:
+  * find a way to autoconfigure modules
+    * random generated mac
+    * udp broadcast for config data
+    * save config in nvram
+  * Maximum number of buttons + leds that can be attached to a Atmega328 ?
+    * is there a way to use a pin both for led output as push button input ?
