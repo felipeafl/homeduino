@@ -18,3 +18,4 @@ TODO:
     * Arduino forum: example of using one analog pin to read 5 switches [http://www.arduino.cc/cgi-bin/yabb2/YaBB.pl?num=1226896251/0]
     * Microchip AN234 application note [http://ww1.microchip.com/downloads/en/AppNotes/00234a.pdf]
     * Arduino tutorial: LED Driver [http://www.arduino.cc/en/Tutorial/LEDDriver]
+    * Charlieplexing leds [http://en.wikipedia.org/wiki/Charlieplexing]
