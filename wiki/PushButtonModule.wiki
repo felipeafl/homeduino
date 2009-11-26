@@ -7,15 +7,19 @@ The push button module is a module where push buttons can be connected to.  For 
 = Details =
 
 Progress:
-  * Start off with regular debounce example
+ * Start off with regular debounce example
+
+Connect buttons like this:
+ * Arduino forum: example of using one analog pin to read 5 switches [http://www.arduino.cc/cgi-bin/yabb2/YaBB.pl?num=1226896251/0]
+ * put x numer of resistors in serie and each push button sorts a single resistor
+   * if each resistor is x times the value of the previous, it should be possible to read each combination of buttons pushed.  ( Good value for x is 1.4678 witch matches with standard resistor values )
 
 TODO:
-  * find a way to autoconfigure modules
-    * random generated mac
-    * udp broadcast for config data
-    * save config in nvram
-  * Maximum number of buttons + leds that can be attached to a Atmega328 ?
-    * Arduino forum: example of using one analog pin to read 5 switches [http://www.arduino.cc/cgi-bin/yabb2/YaBB.pl?num=1226896251/0]
-    * Microchip AN234 application note [http://ww1.microchip.com/downloads/en/AppNotes/00234a.pdf]
-    * Arduino tutorial: LED Driver [http://www.arduino.cc/en/Tutorial/LEDDriver]
-    * Charlieplexing leds [http://en.wikipedia.org/wiki/Charlieplexing]
+ * find a way to autoconfigure modules
+   * random generated mac
+   * udp broadcast for config data
+   * save config in nvram
+ * Maximum number of leds that can be attached to a Atmega328 ?
+   * Microchip AN234 application note [http://ww1.microchip.com/downloads/en/AppNotes/00234a.pdf]
+   * Arduino tutorial: LED Driver [http://www.arduino.cc/en/Tutorial/LEDDriver]
+   * Charlieplexing leds [http://en.wikipedia.org/wiki/Charlieplexing]
