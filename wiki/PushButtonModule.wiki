@@ -13,6 +13,7 @@ Connect buttons like this:
  * Arduino forum: example of using one analog pin to read 5 switches [http://www.arduino.cc/cgi-bin/yabb2/YaBB.pl?num=1226896251/0]
  * put x numer of resistors in serie and each push button sorts a single resistor
    * if each resistor is x times the value of the previous, it should be possible to read each combination of buttons pushed.  ( Good value for x is 1.4678 witch matches with standard resistor values )
+   * with 2+1 wires, many buttons can be read !
 
 TODO:
  * find a way to autoconfigure modules
