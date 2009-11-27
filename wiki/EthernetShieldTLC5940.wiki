@@ -1,4 +1,8 @@
-This is a Copy & paste from [http://www.arduino.cc/cgi-bin/yabb2/YaBB.pl?num=1257363045] by [http://www.arduino.cc/cgi-bin/yabb2/YaBB.pl?action=viewprofile;username=chnicolas]
+#labels EthernetShield,TLC5940,SPI
+This is a Copy & paste from [http://www.arduino.cc/cgi-bin/yabb2/YaBB.pl?num=1257363045] 
+by [http://www.arduino.cc/cgi-bin/yabb2/YaBB.pl?action=viewprofile;username=chnicolas]
+
+=HOWTO :Duemilanove+EthernetShield+TLC5940=
 
 This is the definitive guide to have this three components connected and working together.
 - Arduino Duemilanove
