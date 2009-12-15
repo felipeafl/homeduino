@@ -27,4 +27,4 @@ Input pin usage:
  * 10 SPI - SS
  * 11 SPI - MOSI
  * 12 SPI - MISO
- * 13 SCK
+ * 13 SPI - SCK
