@@ -12,3 +12,19 @@ Add your content here.  Format your content with:
  * PWM: 3, 5, 6, 9, (10, and 11). Provide 8-bit PWM output with the analogWrite() function. 
  * LED: 13. There is a built-in LED connected to digital pin 13. When the pin is HIGH value, the LED is on, when the pin is LOW, it's off
  * SPI: 10 (SS), 11 (MOSI), 12 (MISO), 13 (SCK). These pins support SPI communication, which, although provided by the underlying hardware, is not currently included in the Arduino language. 
+
+Input pin usage:
+ * 00 RX
+ * 01 TX
+ * 02 free
+ * 03 free (pwm)
+ * 04 free
+ * 05 free (pwm)
+ * 06 free (pwm)
+ * 07 free
+ * 08 free
+ * 09 free (pwm)
+ * 10 SPI - SS
+ * 11 SPI - MOSI
+ * 12 SPI - MISO
+ * 13 SCK
