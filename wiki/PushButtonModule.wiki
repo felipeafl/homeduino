@@ -28,4 +28,4 @@ Connect buttons like this:
 
 ==Input data multiplexing==
 
-Charlieplexing can also be used to multiplex digital input signals into a microcontroller. The same diode circuits are used, except a switch is placed in series with each diode. To read whether a switch is open or closed, the microcontroller configures one pin as an input with an internal pull-up resistor. The other pin is configured as an output and set to logic-low. If the input pin reads low then the switch is closed, and if the input pin reads high then the switch is open. [6]
+Charlieplexing can also be used to multiplex digital input signals into a microcontroller. The same diode circuits are used, except a switch is placed in series with each diode. To read whether a switch is open or closed, the microcontroller configures one pin as an input with an internal pull-up resistor. The other pin is configured as an output and set to logic-low. If the input pin reads low then the switch is closed, and if the input pin reads high then the switch is open.
