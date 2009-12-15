@@ -34,5 +34,5 @@ Analog input pin usage:
  * 01 input 5 - 8
  * 02 free ( temp sensor ? )
  * 03 free ( light sensor - pir sensor ? )
- * 04 I2C - SDA
- * 05 I2C -  SCL
+ * 04 free - I2C - SDA
+ * 05 free - I2C -  SCL
