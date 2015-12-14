@@ -1,0 +1,65 @@
+This is a Copy & paste from http://www.arduino.cc/cgi-bin/yabb2/YaBB.pl?num=1257363045
+by http://www.arduino.cc/cgi-bin/yabb2/YaBB.pl?action=viewprofile;username=chnicolas
+
+# HOWTO :Duemilanove+EthernetShield+TLC5940 #
+
+This is the definitive guide to have this three components connected and working together.
+- Arduino Duemilanove
+- Ethernet Shield
+- TLC5940
+
+There is 3 steps to have this configuration working :
+- Modification of the wiring between the Duemilanove and the Ethernet shield.
+- Modification of the Ethernet shield library (spi.h)
+- Modification of the TLC5940 library (tlc\_config.h)
+
+Wiring :
+
+TLC5940  to Duemilanove
+
+BLANK   -> PB2 (D10)
+XLAT     -> PB1 (D9)
+SIN       -> PD7 (D7)
+XERR     -> PD6 (D6)
+SCLK     -> PD4 (D4)
+GSCLK   -> PD3 (D3)
+
+Ethernet shield to Duemilanove
+
+D10 -> D8
+
+This is easy to do , bend the pin D10 of the Ethernet shield so it doesn't connect to the duemilanove.
+Connect the D10 of the ethernet shield to the D8 Ethernet shield so you can still plug and unplug the Ethernet shield
+
+Change in SPI.h :
+
+old
+```
+*                   - #define SPI0_SS_BIT                                    BIT1
+*                -      PORTB |= SPI0_SS_BIT | BIT0 ; PORTB &= ~(SPI0_SCLK_BIT|SPI0_MOSI_BIT);\
+*                   - #define IINCHIP_CS_BIT                              BIT0
+```
+
+new
+```
+*                   - #define SPI0_SS_BIT                                    BIT0
+*                -      PORTB |= SPI0_SS_BIT | BIT2 ; PORTB &= ~(SPI0_SCLK_BIT|SPI0_MOSI_BIT);\
+*                   - #define IINCHIP_CS_BIT                              BIT0
+```
+
+Change in tlc\_config.h
+
+old
+```
+*                  - #define DATA_TRANSFER_MODE    TLC_SPI
+```
+new
+```
+*                  - #define DATA_TRANSFER_MODE    TLC_BITBANG
+```
+
+With these modification, you can use the 3 components together with their respective library.
+I made a pcb with this configuration for a project and it is working fine, I can change the parameter of the TLC via a web browser
+
+
+If somebody can tell me how to upload photo it will be nice

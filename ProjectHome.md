@@ -1,0 +1,1 @@
+The purpose of this project is to build a distributed home automation system.  Communication between different modules is done over ethernet (but not limited to ethernet or IP in any way)

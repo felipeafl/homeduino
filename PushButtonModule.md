@@ -1,0 +1,29 @@
+# Introduction #
+
+The push button module is a module where push buttons can be connected to.  For every push button, there is a LED to provide user feedback ( light is on, light is off, etc ... )
+
+# Details #
+
+## Progress: ##
+  * Start off with regular debounce example
+
+Connect buttons like this:
+  * Arduino forum: example of using one analog pin to read 5 switches http://www.arduino.cc/cgi-bin/yabb2/YaBB.pl?num=1226896251/0
+  * put x numer of resistors in serie and each push button sorts a single resistor
+    * if each resistor is x times the value of the previous, it should be possible to read each combination of buttons pushed.  ( Good value for x is 1.4678 witch matches with standard resistor values )
+    * with 2+1 wires, many buttons can be read !
+
+## TODO: ##
+  * find a way to autoconfigure modules
+    * random generated mac
+    * udp broadcast for config data
+    * save config in nvram
+  * Maximum number of leds that can be attached to a Atmega328 ?
+    * Microchip AN234 application note http://ww1.microchip.com/downloads/en/AppNotes/00234a.pdf
+    * Arduino tutorial: LED Driver http://www.arduino.cc/en/Tutorial/LEDDriver
+    * Charlieplexing leds http://en.wikipedia.org/wiki/Charlieplexing
+
+
+## Input data multiplexing ##
+
+Charlieplexing can also be used to multiplex digital input signals into a microcontroller. The same diode circuits are used, except a switch is placed in series with each diode. To read whether a switch is open or closed, the microcontroller configures one pin as an input with an internal pull-up resistor. The other pin is configured as an output and set to logic-low. If the input pin reads low then the switch is closed, and if the input pin reads high then the switch is open.
